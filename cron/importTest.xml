@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2023-08-08 01:34">
+    <shop>
+        <name>ООО МИР ИНСТРУМЕНТА</name>
+        <company>ООО МИР ИНСТРУМЕНТА</company>
+        <url>https://instrument.ru</url>
+        <email>info@instrument.ru</email>
+        <platform>1C-Битрикс</platform>
+        <version>1.0</version>
+        <currencies>
+            <currency id="RUB" rate="1"/>
+        </currencies>
+        <categories>
+            <category id="976">Автомобильный инструмент</category>
+            <category id="1022" parentId="976">Аксессуары автомобильные</category>
+            <category id="2516" parentId="1022">Антибуксы</category>
+            <category id="1023" parentId="1022">Ареометры</category>
+            <category id="1024" parentId="1022">Воронки</category>
+            <category id="2136" parentId="1022">Держатели телефонов и планшетов</category>
+            <category id="1031" parentId="1022">Канистры для топлива</category>
+            <category id="1041" parentId="1022">Органайзеры</category>
+            <category id="1042" parentId="1022">Пакеты для шин</category>
+            <category id="1072" parentId="1022">Провода стартовые</category>
+            <category id="1057" parentId="1022">Резинки багажные</category>
+            <category id="1058" parentId="1022">Ремни багажные</category>
+            <category id="1061" parentId="1022">Салфетки и губки</category>
+            <category id="1066" parentId="1022">Тросы буксировочные</category>
+            <category id="1067" parentId="1022">Удобства в автомобиле</category>
+            <category id="2137" parentId="1022">Щетки стеклоочистителя</category>
+            <category id="1033" parentId="976">Пневмоинструмент</category>
+            <category id="1044" parentId="1033">Гайковерты пневматические</category>
+            <category id="1046" parentId="1033">Дрели пневматические</category>
+            <category id="2447" parentId="1033">Заклепочники пневматические</category>
+            <category id="1034" parentId="1033">Краскораспылители</category>
+            <category id="1451" parentId="1033">Молотки пневматические</category>
+            <category id="1040" parentId="1033">Нейлеры пневматические</category>
+            <category id="1043" parentId="1033">Пистолеты пневматические</category>
+            <category id="1048" parentId="1033">Пневмоинструмент (аксессуары)</category>
+            <category id="1050" parentId="1033">Степлеры пневматические</category>
+            <category id="1045" parentId="1033">Трещотки пневматические</category>
+            <category id="2710" parentId="1033">Хоппер ковши</category>
+            <category id="1047" parentId="1033">Шлифовальные машины</category>
+            <category id="1071" parentId="1033">Шуруповерты пневматические</category>
+            <category id="1025" parentId="976">Домкраты</category>
+            <category id="1026" parentId="1025">Домкраты гидравлические бутылочные</category>
+            <category id="1027" parentId="1025">Домкраты гидравлические подкатные</category>
+            <category id="1028" parentId="1025">Домкраты механические бутылочные</category>
+            <category id="1029" parentId="1025">Домкраты реечные</category>
+            <category id="1030" parentId="1025">Домкраты ромбовые</category>
+            <category id="2446" parentId="1025">Домкраты электрогидравлические</category>
+            <category id="1035" parentId="976">Лебедки автомобильные</category>
+            <category id="1063" parentId="976">Специальные приспособления</category>
+            <category id="1032" parentId="976">Компрессоры автомобильные</category>
+            <category id="1069" parentId="976">Щетки-сметки</category>
+            <category id="1062" parentId="976">Скребки и водосгоны</category>
+            <category id="1037" parentId="976">Масленки</category>
+            <category id="1055" parentId="976">Пробники автомобильные</category>
+            <category id="1064" parentId="976">Тали</category>
+            <category id="1065" parentId="976">Тельферы</category>
+            <category id="1053" parentId="976">Подставки под машину регулируемые</category>
+            <category id="1052" parentId="976">Поддоны для сбора масла</category>
+            <category id="1038" parentId="976">Мебель гаражная</category>
+            <category id="1056" parentId="976">Растяжки гидравлические</category>
+            <category id="1039" parentId="976">Насосы гидравлические</category>
+            <category id="1068" parentId="976">Цилиндры гидравлические</category>
+            <category id="1054" parentId="976">Прессы гидравлические</category>
+            <category id="1236">Архив товарных позиций</category>
+            <category id="1005">Измерительный инструмент</category>
+            <category id="1007" parentId="1005">Дальномеры</category>
+            <category id="1014" parentId="1005">Уровни</category>
+            <category id="1015" parentId="1014">Уровни алюминиевые</category>
+            <category id="1018" parentId="1014">Уровни пластмассовые</category>
+            <category id="1016" parentId="1005">Уровни лазерные</category>
+            <category id="2666" parentId="1016">Аксессуары для лазерных уровней</category>
+            <category id="1006" parentId="1005">Гидроуровни</category>
+            <category id="1008" parentId="1005">Измерительные колеса</category>
+            <category id="1009" parentId="1005">Линейки</category>
+            <category id="1013" parentId="1005">Угольники</category>
+            <category id="1011" parentId="1005">Рулетки</category>
+            <category id="1012" parentId="1005">Рулетки геодезические</category>
+            <category id="1017" parentId="1005">Штангенциркули</category>
+            <category id="1010" parentId="1005">Микрометры</category>
+            <category id="1073">Крепежный инструмент</category>
+            <category id="1089" parentId="1073">Степлеры мебельные</category>
+            <category id="1085" parentId="1073">Скобы для мебельных степлеров</category>
+            <category id="1074" parentId="1073">Гвозди для мебельного степлера</category>
+            <category id="1086" parentId="1073">Скобы металлические</category>
+            <category id="1087" parentId="1073">Скобы электроустановочные</category>
+            <category id="1078" parentId="1073">Заклепочники</category>
+            <category id="1077" parentId="1073">Заклепки</category>
+            <category id="1075" parentId="1073">Дюбели</category>
+            <category id="1076" parentId="1073">Дюбель-гвозди</category>
+            <category id="2134" parentId="1073">Саморезы</category>
+            <category id="1079" parentId="1073">Крепеж перфорированный</category>
+            <category id="2561" parentId="1079">Анкеры регулируемые</category>
+            <category id="2560" parentId="1079">Кляймеры</category>
+            <category id="2562" parentId="1079">Крабы соединительные</category>
+            <category id="2555" parentId="1079">Ленты</category>
+            <category id="2563" parentId="1079">Мебельный крепеж</category>
+            <category id="2557" parentId="1079">Опоры бруса</category>
+            <category id="2553" parentId="1079">Пластины</category>
+            <category id="2556" parentId="1079">Подвесы</category>
+            <category id="2558" parentId="1079">Проушины прямы</category>
+            <category id="2559" parentId="1079">Проушины угловые</category>
+            <category id="2554" parentId="1079">Уголки</category>
+            <category id="1080" parentId="1073">Кронштейны</category>
+            <category id="2564" parentId="1080">Кронштейны угловые</category>
+            <category id="2565" parentId="1080">Кронштейны усиленные</category>
+            <category id="2566" parentId="1080">Кронштейны декоративные</category>
+            <category id="1081" parentId="1073">Наборы крепежных изделий</category>
+            <category id="1088" parentId="1073">Скобяные изделия</category>
+            <category id="1082" parentId="1073">Проволока</category>
+            <category id="1094" parentId="1082">Проволока из нержавеющей стали</category>
+            <category id="1083" parentId="1082">Проволока с ПВХ покрытием</category>
+            <category id="1084" parentId="1082">Проволока стальная оцинкованная</category>
+            <category id="1090" parentId="1073">Тросы</category>
+            <category id="1091" parentId="1073">Хомуты</category>
+            <category id="1092" parentId="1091">Хомуты металлические</category>
+            <category id="1093" parentId="1091">Хомуты пластиковые (стяжки кабельные)</category>
+            <category id="2135" parentId="1091">Хомуты сантехнические</category>
+            <category id="859">Отделочный инструмент</category>
+            <category id="1338" parentId="859">Кисти</category>
+            <category id="1339" parentId="1338">Кисти - макловицы</category>
+            <category id="1340" parentId="1338">Кисти круглые</category>
+            <category id="1341" parentId="1338">Кисти маховые</category>
+            <category id="1342" parentId="1338">Кисти плоские</category>
+            <category id="1343" parentId="1338">Кисти радиаторные</category>
+            <category id="1344" parentId="1338">Кисти флейцевые</category>
+            <category id="1323" parentId="859">Валики</category>
+            <category id="1324" parentId="1323">Бюгели</category>
+            <category id="1325" parentId="1323">Валики игольчатые</category>
+            <category id="1326" parentId="1323">Валики прижимные</category>
+            <category id="1327" parentId="1323">Валики с ручкой</category>
+            <category id="1380" parentId="1323">Шубки для валиков</category>
+            <category id="1347" parentId="859">Кюветы для валиков</category>
+            <category id="1367" parentId="859">Ручки телескопические для валиков</category>
+            <category id="1364" parentId="859">Правила алюминиевые</category>
+            <category id="1376" parentId="859">Шпатели</category>
+            <category id="1377" parentId="1376">Шпатели лопатки</category>
+            <category id="1378" parentId="1376">Шпатели металлические</category>
+            <category id="1379" parentId="1376">Шпатели резиновые, пластмассовые</category>
+            <category id="1337" parentId="859">Кельмы</category>
+            <category id="1329" parentId="859">Гладилки</category>
+            <category id="2517" parentId="859">Терки</category>
+            <category id="2107" parentId="2517">Терки пластмассовые</category>
+            <category id="1373" parentId="2517">Терки полиуретановые</category>
+            <category id="1381" parentId="859">Щетки</category>
+            <category id="1372" parentId="859">Тазы строительные</category>
+            <category id="1328" parentId="859">Ведра строительные</category>
+            <category id="1345" parentId="859">Ковши строительные</category>
+            <category id="1357" parentId="859">Миксеры для смесей и красок</category>
+            <category id="1382" parentId="859">Краскораспылители</category>
+            <category id="1289" parentId="859">Плиткорезы</category>
+            <category id="2597" parentId="1289">Кусачки</category>
+            <category id="2596" parentId="1289">Плиткорезы ручные</category>
+            <category id="2515" parentId="859">Аксессуары для плиткорезов</category>
+            <category id="1365" parentId="859">Приспособление для кладки плитки</category>
+            <category id="2590" parentId="1365">Крестики</category>
+            <category id="2591" parentId="1365">Клинья</category>
+            <category id="2592" parentId="1365">СВП</category>
+            <category id="2593" parentId="1365">Шаблоны для копирования</category>
+            <category id="2594" parentId="1365">Замки магнитные</category>
+            <category id="2595" parentId="1365">Наборы для укладки плитки</category>
+            <category id="1371" parentId="859">Стеклорезы</category>
+            <category id="1370" parentId="859">Стеклодомкраты</category>
+            <category id="1348" parentId="859">Ленты</category>
+            <category id="1349" parentId="1348">Лен сантехнический</category>
+            <category id="1350" parentId="1348">Ленты бордюрные</category>
+            <category id="1351" parentId="1348">Ленты изоляционные</category>
+            <category id="1352" parentId="1348">Ленты клеящие</category>
+            <category id="1353" parentId="1348">Ленты малярные</category>
+            <category id="1354" parentId="1348">Ленты сигнальные</category>
+            <category id="1383" parentId="1348">Ленты углозащитные и углоформирующие</category>
+            <category id="1368" parentId="859">Серпянки самоклеящиеся</category>
+            <category id="1369" parentId="859">Сетки стеклотканевые</category>
+            <category id="1363" parentId="859">Пленка защитная строительная</category>
+            <category id="1362" parentId="859">Пистолеты для пены и герметика</category>
+            <category id="2599" parentId="1362">Пистолеты для герметика</category>
+            <category id="2598" parentId="1362">Пистолеты для пены</category>
+            <category id="2600" parentId="1362">Сменные сопла</category>
+            <category id="1331" parentId="859">Инструмент для затирки швов</category>
+            <category id="1332" parentId="859">Инструмент для нанесения декоративных покрытий</category>
+            <category id="1334" parentId="859">Инструмент по гипсокартону</category>
+            <category id="1333" parentId="859">Инструмент по газо и пенобетону</category>
+            <category id="1366" parentId="859">Просекатели для профиля</category>
+            <category id="1335" parentId="859">Карандаши строительные</category>
+            <category id="1375" parentId="859">Шнуры разметочные</category>
+            <category id="1356" parentId="859">Мелки разметочные</category>
+            <category id="1360" parentId="859">Отвесы</category>
+            <category id="1346" parentId="859">Крюки и проволока для вязки арматуры</category>
+            <category id="860" parentId="859">Средства индивидуальной защиты</category>
+            <category id="861" parentId="860">Бахилы</category>
+            <category id="1330" parentId="860">Жилеты сигнальные</category>
+            <category id="1336" parentId="860">Каски защитные</category>
+            <category id="862" parentId="860">Комбинезоны защитные</category>
+            <category id="867" parentId="860">Маски защитные</category>
+            <category id="1355" parentId="860">Маски сварщика</category>
+            <category id="1358" parentId="860">Наколенники защитные</category>
+            <category id="1359" parentId="860">Наушники защитные</category>
+            <category id="1361" parentId="860">Очки газосварщика</category>
+            <category id="863" parentId="860">Очки защитные</category>
+            <category id="2143" parentId="860">Перчатки защитные</category>
+            <category id="1374" parentId="860">Удерживающие системы</category>
+            <category id="865" parentId="860">Щитки защитные</category>
+            <category id="1237">Режущий инструмент</category>
+            <category id="1245" parentId="1237">Диски алмазные отрезные</category>
+            <category id="1246" parentId="1237">Диски пильные по дереву</category>
+            <category id="1247" parentId="1237">Диски универсальные</category>
+            <category id="1260" parentId="1237">Круги и диски абразивные</category>
+            <category id="1261" parentId="1260">Круги абразивные на ворсовой подложке</category>
+            <category id="1262" parentId="1260">Круги и диски полировальные</category>
+            <category id="1263" parentId="1260">Круги лепестковые радиальные (с оправкой)</category>
+            <category id="1264" parentId="1260">Круги лепестковые торцевые</category>
+            <category id="1265" parentId="1260">Круги отрезные и зачистные армированные</category>
+            <category id="1266" parentId="1260">Круги шлифовальные гибкие</category>
+            <category id="1267" parentId="1260">Круги шлифовальные для точила</category>
+            <category id="1308" parentId="1260">Треугольники абразивные на ворсовой подложке</category>
+            <category id="1270" parentId="1237">Ленты абразивные (для шлифмашин) </category>
+            <category id="1251" parentId="1237">Сверла</category>
+            <category id="1252" parentId="1251">Комбинированные наборы сверл</category>
+            <category id="1296" parentId="1251">Сверла по бетону</category>
+            <category id="1256" parentId="1251">Сверла по дереву</category>
+            <category id="1293" parentId="1251">Сверла по керамической плитке</category>
+            <category id="1258" parentId="1251">Сверла по металлу</category>
+            <category id="1242" parentId="1237">Буры и насадки для перфоратора</category>
+            <category id="1243" parentId="1242">Буры</category>
+            <category id="1253" parentId="1242">Коронки</category>
+            <category id="1276" parentId="1242">Насадки</category>
+            <category id="1310" parentId="1237">Чашки алмазные</category>
+            <category id="1312" parentId="1237">Шкурка шлифовальная</category>
+            <category id="1313" parentId="1312">Шкурка на бумажной основе в рулонах</category>
+            <category id="1314" parentId="1312">Шкурка на тканевой основе в листах</category>
+            <category id="1315" parentId="1312">Шкурка на тканевой основе в рулонах</category>
+            <category id="1316" parentId="1312">Шлифовальные листы на бумажной основе</category>
+            <category id="1240" parentId="1237">Приспособления для шлифования</category>
+            <category id="1241" parentId="1240">Бруски для шлифования</category>
+            <category id="1244" parentId="1240">Губки для шлифования</category>
+            <category id="1248" parentId="1240">Камни и бруски абразивные</category>
+            <category id="1277" parentId="1240">Насадки для дрели и УШМ</category>
+            <category id="1291" parentId="1237">Полотна для Электролобзиков (пилки)</category>
+            <category id="1286" parentId="1237">Ножовки по металлу</category>
+            <category id="1290" parentId="1286">Полотна</category>
+            <category id="1283" parentId="1237">Ножницы</category>
+            <category id="2428" parentId="1283">Ножницы кухонные</category>
+            <category id="2454" parentId="1283">Ножницы кухонные</category>
+            <category id="1284" parentId="1283">Ножницы по металлу</category>
+            <category id="1285" parentId="1283">Ножницы по ПВХ</category>
+            <category id="1322" parentId="1283">Ножницы хозяйственные</category>
+            <category id="1268" parentId="1237">Ножи</category>
+            <category id="1269" parentId="1268">Лезвия для ножей</category>
+            <category id="1278" parentId="1268">Ножи для резки напольных покрытий</category>
+            <category id="1279" parentId="1268">Ножи для резки обоев</category>
+            <category id="1280" parentId="1268">Ножи для резки теплоизоляции</category>
+            <category id="2146" parentId="1268">Ножи кухонные</category>
+            <category id="1281" parentId="1268">Ножи строительные</category>
+            <category id="1282" parentId="1268">Ножи туристические</category>
+            <category id="1292" parentId="1237">Приспособления для затачивания</category>
+            <category id="1238" parentId="1237">Болторезы и труборезы</category>
+            <category id="1239" parentId="1238">Болторезы</category>
+            <category id="1309" parentId="1238">Труборезы</category>
+            <category id="1452" parentId="1237">Насадки для многофункционального инструмента (МФИ)</category>
+            <category id="1304" parentId="1237">Сетки абразивные и сеткодержатели</category>
+            <category id="1305" parentId="1304">Сетки абразивные</category>
+            <category id="1306" parentId="1304">Сеткодержатели</category>
+            <category id="1317" parentId="1237">Щетки с металлической проволокой</category>
+            <category id="1318" parentId="1317">Щетки для дрели</category>
+            <category id="1319" parentId="1317">Щетки для точила</category>
+            <category id="1320" parentId="1317">Щетки для УШМ</category>
+            <category id="1321" parentId="1317">Щетки ручные</category>
+            <category id="1307" parentId="1237">Скребки</category>
+            <category id="1249" parentId="1237">Резьбонарезной инструмент</category>
+            <category id="1250" parentId="1249">Клуппы</category>
+            <category id="1271" parentId="1249">Метчики</category>
+            <category id="1272" parentId="1249">Метчикодержатели</category>
+            <category id="1274" parentId="1249">Наборы метчиков и плашек</category>
+            <category id="1287" parentId="1249">Плашки</category>
+            <category id="1288" parentId="1249">Плашкодержатели</category>
+            <category id="2108" parentId="1237">Ролики для плиткореза</category>
+            <category id="1002">Садовый инвентарь</category>
+            <category id="2487" parentId="1002">Газонокосилки</category>
+            <category id="2488" parentId="2487">Газонокосилки бензиновые</category>
+            <category id="2489" parentId="2487">Газонокосилки электрические</category>
+            <category id="2484" parentId="2487">Газонокосилки аккумуляторные</category>
+            <category id="2495" parentId="2487">Ножи для газонокосилок</category>
+            <category id="1118" parentId="1002">Воздуходувки аккумуляторные</category>
+            <category id="2449" parentId="1002">Измельчители</category>
+            <category id="1215" parentId="1002">Скарификаторы</category>
+            <category id="2448" parentId="1002">Дровоколы</category>
+            <category id="2702" parentId="1002">Насадки для полива</category>
+            <category id="1235" parentId="2702">Распылители</category>
+            <category id="2703" parentId="2702">Распылители на штанге</category>
+            <category id="1183" parentId="2702">Пистолеты - распылители</category>
+            <category id="2704" parentId="2702">Дождеватели</category>
+            <category id="2705" parentId="2702">Наборы</category>
+            <category id="2659" parentId="1002">Триммеры</category>
+            <category id="2490" parentId="2659">Триммеры бензиновые</category>
+            <category id="2660" parentId="2659">Триммеры электрические</category>
+            <category id="2491" parentId="2659">Триммеры аккумуляторные</category>
+            <category id="2494" parentId="2659">Леска для триммеров</category>
+            <category id="2493" parentId="2659">Катушки для триммеров</category>
+            <category id="2496" parentId="2659">Диски для триммеров</category>
+            <category id="2492" parentId="2659">Аксессуары для триммеров</category>
+            <category id="1181" parentId="1002">Опрыскиватели</category>
+            <category id="2675" parentId="1181">Опрыскиватели аккумуляторные</category>
+            <category id="2674" parentId="1181">Опрыскиватели бензиновые</category>
+            <category id="2673" parentId="1181">Опрыскиватели ручные</category>
+            <category id="1218" parentId="1002">Таймеры для полива</category>
+            <category id="1098" parentId="1002">Адаптеры, переходники</category>
+            <category id="2531" parentId="1098">Адаптеры латунные</category>
+            <category id="2530" parentId="1098">Адаптеры пласмассовые</category>
+            <category id="2533" parentId="1098">Муфты латунные</category>
+            <category id="2532" parentId="1098">Муфты пластмассовые</category>
+            <category id="2535" parentId="1098">Переходники латунные</category>
+            <category id="2534" parentId="1098">Переходники пластмассовые</category>
+            <category id="2537" parentId="1098">Разветвители латунные</category>
+            <category id="2536" parentId="1098">Разветвители пластмассовые</category>
+            <category id="2539" parentId="1098">Соединители латунные</category>
+            <category id="2538" parentId="1098">Соединители пластмассовые</category>
+            <category id="2540" parentId="1098">Соединители стальные</category>
+            <category id="2545" parentId="1098">Наборы</category>
+            <category id="1138" parentId="1002">Шланги, катушки</category>
+            <category id="1226" parentId="1138">Шланги</category>
+            <category id="1139" parentId="1138">Катушки для шлангов</category>
+            <category id="1233" parentId="1138">Наборы</category>
+            <category id="1159" parentId="1002">Лейки</category>
+            <category id="1105" parentId="1002">Баки</category>
+            <category id="1114" parentId="1002">Ведра, тазы оцинкованные</category>
+            <category id="2542" parentId="1114">Ведра оцинкованные</category>
+            <category id="2543" parentId="1114">Тазы оцинкованные</category>
+            <category id="1223" parentId="1002">Умывальники</category>
+            <category id="1096" parentId="1002">Снегоуборочный инвентарь</category>
+            <category id="2528" parentId="1096">Лопаты снеговые с черенком</category>
+            <category id="2529" parentId="1096">Лопаты снеговые без черенка</category>
+            <category id="1097" parentId="1096">Лопаты снеговые автомобильные</category>
+            <category id="1129" parentId="1096">Движки, скреперы</category>
+            <category id="1157" parentId="1096">Ледорубы, скребки</category>
+            <category id="2453" parentId="1096">Водосгоны для пола</category>
+            <category id="1141" parentId="1002">Тачки, тележки, носилки</category>
+            <category id="1219" parentId="1141">Тачки</category>
+            <category id="1142" parentId="1141">Колеса и камеры для тачки</category>
+            <category id="2706" parentId="1141">Тележки</category>
+            <category id="1178" parentId="1141">Носилки</category>
+            <category id="1154" parentId="1002">Культиваторы, аэраторы</category>
+            <category id="1146" parentId="1002">Мелкий садовый инструмент</category>
+            <category id="2479" parentId="1146">Совки посадочные</category>
+            <category id="1147" parentId="1146">Конусы посадочные</category>
+            <category id="2480" parentId="1146">Мотыжки</category>
+            <category id="2482" parentId="1146">Корнеудалители</category>
+            <category id="2481" parentId="1146">Рыхлители</category>
+            <category id="1175" parentId="1146">Наборы мелкого садового инструмента</category>
+            <category id="1204" parentId="1146">Серия Classic</category>
+            <category id="1205" parentId="1146">Серия Connect</category>
+            <category id="1206" parentId="1146">Серия Era</category>
+            <category id="2425" parentId="1146">Серия Ergo</category>
+            <category id="2451" parentId="1146">Серия Ergo</category>
+            <category id="1207" parentId="1146">Серия Flower green</category>
+            <category id="2138" parentId="1146">Серия Flower lime</category>
+            <category id="2140" parentId="1146">Серия Flower mint</category>
+            <category id="1208" parentId="1146">Серия Fresh line</category>
+            <category id="1209" parentId="1146">Серия Nylon</category>
+            <category id="2450" parentId="1146">Серия Nylon Soft</category>
+            <category id="2141" parentId="1146">Серия Premium</category>
+            <category id="1210" parentId="1146">Серия Premium plus</category>
+            <category id="2139" parentId="1146">Серия Smart</category>
+            <category id="1211" parentId="1146">Серия Standard</category>
+            <category id="1212" parentId="1146">Серия Агроном</category>
+            <category id="1163" parentId="1002">Лопаты</category>
+            <category id="1166" parentId="1163">Лопаты с деревянным черенком</category>
+            <category id="1167" parentId="1163">Лопаты с металлическим черенком</category>
+            <category id="1168" parentId="1163">Лопаты с фибергласовым черенком</category>
+            <category id="1165" parentId="1163">Лопаты без черенка</category>
+            <category id="1164" parentId="1163">Лопаты автомобильные, походные</category>
+            <category id="1126" parentId="1002">Грабли</category>
+            <category id="1127" parentId="1126">Грабли веерные</category>
+            <category id="1128" parentId="1126">Грабли классические</category>
+            <category id="1115" parentId="1002">Вилы</category>
+            <category id="1116" parentId="1115">Вилы садово-огородные</category>
+            <category id="1117" parentId="1115">Вилы сенные</category>
+            <category id="1150" parentId="1002">Косы</category>
+            <category id="1231" parentId="1150">Комплектующие для кос</category>
+            <category id="1151" parentId="1150">Косы-литовки</category>
+            <category id="1152" parentId="1150">Косы-секачи</category>
+            <category id="1153" parentId="1150">Косы-серпаны</category>
+            <category id="1172" parentId="1002">Метлы, веники</category>
+            <category id="2709" parentId="1172">Веники</category>
+            <category id="2708" parentId="1172">Метлы</category>
+            <category id="1170" parentId="1002">Мачете</category>
+            <category id="1194" parentId="1002">Сучкорезы</category>
+            <category id="1195" parentId="1194">Прямого реза</category>
+            <category id="1200" parentId="1194">С наковальней</category>
+            <category id="1229" parentId="1194">Штанговые</category>
+            <category id="1119" parentId="1002">Ножницы садовые</category>
+            <category id="1120" parentId="1119">Газонные ножницы</category>
+            <category id="1156" parentId="1119">Кусторезы</category>
+            <category id="1203" parentId="1119">Садовые ножницы и кусторезы аккумуляторные</category>
+            <category id="1131" parentId="1002">Секаторы</category>
+            <category id="1132" parentId="1131">Для топиария и бонсай</category>
+            <category id="1191" parentId="1131">Прививочные</category>
+            <category id="1193" parentId="1131">Прямого реза</category>
+            <category id="1199" parentId="1131">С наковальней</category>
+            <category id="2693" parentId="1131">Секаторы аккумуляторные</category>
+            <category id="1225" parentId="1131">Цветочные</category>
+            <category id="1003" parentId="1002">Ножовки, пилы садовые</category>
+            <category id="1148" parentId="1002">Ножи садовые</category>
+            <category id="1149" parentId="1148">Копулировочные</category>
+            <category id="1224" parentId="1148">Универсальные</category>
+            <category id="1173" parentId="1002">Мотыги, полольники, кетмени</category>
+            <category id="1230" parentId="1173">Кетмени</category>
+            <category id="1232" parentId="1173">Мотыги из нержавеющей стали</category>
+            <category id="1174" parentId="1173">Мотыги стальные</category>
+            <category id="1188" parentId="1173">Полольники</category>
+            <category id="1186" parentId="1002">Плоскорезы</category>
+            <category id="1213" parentId="1002">Серпы</category>
+            <category id="1144" parentId="1002">Парники, теплицы</category>
+            <category id="1145" parentId="1144">Комплектующие к парникам</category>
+            <category id="2426" parentId="1144">Парники</category>
+            <category id="2452" parentId="1144">Парники</category>
+            <category id="1135" parentId="1002">Пленки, укрывные материалы</category>
+            <category id="1136" parentId="1135">Защита</category>
+            <category id="2544" parentId="1135">Колышки</category>
+            <category id="1185" parentId="1135">Пленка</category>
+            <category id="1222" parentId="1135">Укрывной материал</category>
+            <category id="1192" parentId="1002">Приспособления для рассады</category>
+            <category id="2103" parentId="1002">Цветочные горшки</category>
+            <category id="1140" parentId="1002">Кашпо</category>
+            <category id="2546" parentId="1140">Кашпо подвесные</category>
+            <category id="2547" parentId="1140">Кашпо пристенные</category>
+            <category id="2550" parentId="1140">Вкладыши</category>
+            <category id="2548" parentId="1140">Цепочки для кашпо</category>
+            <category id="2549" parentId="1140">Кронштейны для кашпо</category>
+            <category id="1101" parentId="1002">Садовые ограждения</category>
+            <category id="1102" parentId="1101">Арки садовые</category>
+            <category id="1108" parentId="1101">Бордюрные ленты</category>
+            <category id="1110" parentId="1101">Бордюры садовые</category>
+            <category id="1134" parentId="1101">Заборы декоративные</category>
+            <category id="1155" parentId="1101">Кустодержатели</category>
+            <category id="1234" parentId="1101">Опоры для поддержки веток деревьев</category>
+            <category id="1179" parentId="1101">Опоры для растений</category>
+            <category id="1180" parentId="1101">Опоры для цветов</category>
+            <category id="1187" parentId="1101">Поддержки для растений</category>
+            <category id="1196" parentId="1101">Решетки заборные</category>
+            <category id="2469" parentId="1101">Сетки садовые</category>
+            <category id="1228" parentId="1101">Шпалеры</category>
+            <category id="1214" parentId="1002">Сетки газонные</category>
+            <category id="1111" parentId="1002">Буры садовые</category>
+            <category id="1112" parentId="1111">Буры лопастные</category>
+            <category id="1113" parentId="1111">Буры шнековые</category>
+            <category id="2541" parentId="1111">Удлинители</category>
+            <category id="1106" parentId="1002">Черенки, рукоятки</category>
+            <category id="1201" parentId="1106">Черенки с резьбой</category>
+            <category id="1107" parentId="1106">Черенки без резьбы</category>
+            <category id="1198" parentId="1106">Рукоятки</category>
+            <category id="1202" parentId="1002">Садовые аксессуары</category>
+            <category id="1171" parentId="1002">Мебель для пикника</category>
+            <category id="1189" parentId="1002">Товары для пикника</category>
+            <category id="2683" parentId="1189">Термосумки</category>
+            <category id="2687" parentId="1189">Аккумуляторы холода</category>
+            <category id="2684" parentId="1189">Наборы посуды</category>
+            <category id="2685" parentId="1189">Стаканы</category>
+            <category id="2686" parentId="1189">Бутылки</category>
+            <category id="1190" parentId="1002">Приготовление пищи</category>
+            <category id="2676" parentId="1190">Мангалы</category>
+            <category id="2677" parentId="1190">Шампуры</category>
+            <category id="2678" parentId="1190">Решетки-гриль</category>
+            <category id="2681" parentId="1190">Коптильни</category>
+            <category id="2679" parentId="1190">Барбекю</category>
+            <category id="2680" parentId="1190">Топливо</category>
+            <category id="2682" parentId="1190">Аксессуары</category>
+            <category id="1133" parentId="1002">Душ садовый</category>
+            <category id="2145" parentId="1002">Зонты</category>
+            <category id="1143" parentId="1002">Колеса промышленные</category>
+            <category id="1158" parentId="1002">Ледоступы, ледянки</category>
+            <category id="1176" parentId="1002">Настенные держатели</category>
+            <category id="1059" parentId="1002">Одежда, защита рук</category>
+            <category id="2142" parentId="1059">Перчатки хозяйственные</category>
+            <category id="1184" parentId="1059">Плащи-дождевики</category>
+            <category id="1197" parentId="1059">Рукавицы</category>
+            <category id="1060" parentId="1059">Садовые перчатки</category>
+            <category id="2144" parentId="1059">Шапки</category>
+            <category id="1019">Силовое оборудование</category>
+            <category id="1404" parentId="1019">Тепловые пушки</category>
+            <category id="2386" parentId="1404">Тепловые пушки газовые</category>
+            <category id="2387" parentId="1404">Тепловые пушки дизельные</category>
+            <category id="2389" parentId="1404">Тепловые пушки электрические</category>
+            <category id="1454" parentId="1019">Обогреватели</category>
+            <category id="2607" parentId="1454">Тепловентиляторы</category>
+            <category id="2604" parentId="1454">Конвекторы</category>
+            <category id="2605" parentId="1454">Масляные обогреватели</category>
+            <category id="2603" parentId="1454">Инфракрасные обогреватели</category>
+            <category id="1395" parentId="1019">Компрессоры</category>
+            <category id="2661" parentId="1395">Поршневой прямой привод</category>
+            <category id="2552" parentId="1395">Прямой привод (коаксиальные)</category>
+            <category id="2551" parentId="1395">Ременной привод</category>
+            <category id="1412" parentId="1019">Снегоуборочные машины</category>
+            <category id="2711" parentId="1412">Снегоуборочные машины аккумуляторные</category>
+            <category id="2608" parentId="1412">Снегоуборочные машины бензиновые</category>
+            <category id="2609" parentId="1412">Снегоуборочные машины электрические</category>
+            <category id="2602" parentId="1019">Аксессуары для снегоуборочных машин</category>
+            <category id="2713" parentId="1019">Аксессуары для строительных пылесосов</category>
+            <category id="2698" parentId="1019">Пылесосы строительные</category>
+            <category id="1384" parentId="1019">Электроинструмент</category>
+            <category id="1394" parentId="1384">Дрели</category>
+            <category id="1396" parentId="1384">Лобзики</category>
+            <category id="1411" parentId="1384">Миксеры</category>
+            <category id="1400" parentId="1384">Перфораторы</category>
+            <category id="1401" parentId="1384">Пилы циркулярные</category>
+            <category id="1402" parentId="1384">Рубанки</category>
+            <category id="1405" parentId="1384">Углошлифовальные машины</category>
+            <category id="1406" parentId="1384">Фены</category>
+            <category id="1413" parentId="1384">Шлифовальные машины</category>
+            <category id="1388" parentId="1019">Аксессуары для электроинструмента</category>
+            <category id="1385" parentId="1019">Аккумуляторный инструмент</category>
+            <category id="2647" parentId="1385">Дрели-шуруповерты аккумуляторные</category>
+            <category id="2650" parentId="1385">Отвертки аккумуляторные</category>
+            <category id="2648" parentId="1385">УШМ аккумуляторные</category>
+            <category id="2649" parentId="1385">МФИ аккумуляторные</category>
+            <category id="2646" parentId="1385">Гайковерты ударные аккумуляторные</category>
+            <category id="2688" parentId="1385">Лобзики аккумуляторные</category>
+            <category id="2670" parentId="1385">Машинки для укладки плитки</category>
+            <category id="2700" parentId="1385">Перфораторы аккумуляторные</category>
+            <category id="2690" parentId="1385">Сабельные пилы аккумуляторные</category>
+            <category id="2696" parentId="1385">Секаторы</category>
+            <category id="2691" parentId="1385">Циркулярные пилы аккумуляторные</category>
+            <category id="2689" parentId="1385">Шлифовальные машины аккумуляторные</category>
+            <category id="2645" parentId="1385">Батареи аккумуляторные</category>
+            <category id="2651" parentId="1385">Зарядные устройства</category>
+            <category id="1389" parentId="1019">Пилы цепные</category>
+            <category id="1409" parentId="1389">Аккумуляторные пилы</category>
+            <category id="1390" parentId="1389">Бензопилы</category>
+            <category id="1414" parentId="1389">Электропилы</category>
+            <category id="2625" parentId="1019">Аксессуары для цепных пил</category>
+            <category id="2628" parentId="2625">Стартеры для бензопил</category>
+            <category id="1407" parentId="2625">Цепи</category>
+            <category id="1408" parentId="2625">Шины</category>
+            <category id="1403" parentId="1019">Сварочное оборудование</category>
+            <category id="2385" parentId="1403">Инверторы MMA</category>
+            <category id="2611" parentId="1403">Инверторные полуавтоматы MIG-MAG</category>
+            <category id="2612" parentId="1403">Инверторы TIG</category>
+            <category id="2623" parentId="1019">Аксессуары для сварки</category>
+            <category id="2629" parentId="2623">Электроды</category>
+            <category id="2630" parentId="2623">Держатели электродов</category>
+            <category id="2631" parentId="2623">Фиксаторы магнитные</category>
+            <category id="2632" parentId="2623">Насадки</category>
+            <category id="2714" parentId="2623">Горелки сварочные</category>
+            <category id="2633" parentId="2623">Клеммы</category>
+            <category id="2716" parentId="2623">Наконечники токосъемные</category>
+            <category id="2717" parentId="2623">Подающие ролики</category>
+            <category id="2715" parentId="2623">Сопла газовые</category>
+            <category id="2718" parentId="2623">Цангодержатели</category>
+            <category id="2610" parentId="1019">Аппараты для сварки пластиковых труб</category>
+            <category id="1391" parentId="1019">Бетоносмесители, растворосмесители</category>
+            <category id="2613" parentId="1391">Бетоносмесители</category>
+            <category id="2614" parentId="1391">Растворосмесители</category>
+            <category id="2615" parentId="1391">Растворонасосы</category>
+            <category id="2511" parentId="1019">Аксессуары для бетоносмесителей</category>
+            <category id="2635" parentId="2511">Венцы</category>
+            <category id="2636" parentId="2511">Шестерни</category>
+            <category id="2637" parentId="2511">Ремни</category>
+            <category id="2638" parentId="2511">Чехлы</category>
+            <category id="1386" parentId="1019">Генераторы</category>
+            <category id="1392" parentId="1386">Генераторы бензиновые</category>
+            <category id="1410" parentId="1386">Генераторы дизельные</category>
+            <category id="1393" parentId="1386">Генераторы инверторные</category>
+            <category id="1387" parentId="1019">Аксессуары для генераторов</category>
+            <category id="2455" parentId="1019">Двигатели</category>
+            <category id="1399" parentId="1019">Насосы</category>
+            <category id="2617" parentId="1399">Насосы дренажные</category>
+            <category id="2616" parentId="1399">Насосы вибрационные</category>
+            <category id="2619" parentId="1399">Насосы погружные</category>
+            <category id="2621" parentId="1399">Насосы скважинные</category>
+            <category id="2620" parentId="1399">Насосы садовые</category>
+            <category id="2697" parentId="1399">Насосы фонтанные</category>
+            <category id="2671" parentId="1399">Насосы циркуляционные</category>
+            <category id="2622" parentId="1399">Насосы фекальные</category>
+            <category id="2618" parentId="1399">Насосные станции</category>
+            <category id="2512" parentId="1019">Аксессуары для насосов</category>
+            <category id="1397" parentId="1019">Мотокультиваторы и мотоблоки</category>
+            <category id="2507" parentId="1019">Навесное оборудование для мотокультиваторов и мотоблоков</category>
+            <category id="1398" parentId="1019">Мотопомпы</category>
+            <category id="2434" parentId="1019">Мотобуры</category>
+            <category id="2456" parentId="1019">Аксессуары для мотобуров</category>
+            <category id="2639" parentId="2456">Шнеки</category>
+            <category id="2640" parentId="2456">Удлинители для шнеков</category>
+            <category id="1020" parentId="1019">Моечные машины высокого давления</category>
+            <category id="1021" parentId="1019">Аксессуары для моечных машин высокого давления</category>
+            <category id="2097" parentId="1019">Тельферы</category>
+            <category id="2098" parentId="1019">Лебедки</category>
+            <category id="873">Слесарный инструмент</category>
+            <category id="935" parentId="873">Наборы инструмента</category>
+            <category id="2093" parentId="873">Наборы инструмента бытового</category>
+            <category id="969" parentId="873">Трубогибы</category>
+            <category id="956" parentId="873">Патроны для дрели</category>
+            <category id="967" parentId="873">Тиски</category>
+            <category id="958" parentId="873">Плоскогубцы</category>
+            <category id="879" parentId="873">Бокорезы, кусачки</category>
+            <category id="890" parentId="873">Длинногубцы</category>
+            <category id="891" parentId="890">Длинногубцы изогнутые</category>
+            <category id="892" parentId="890">Длинногубцы прямые</category>
+            <category id="2445" parentId="890">Длинногубцы, двойной рычажный механизм</category>
+            <category id="924" parentId="873">Круглогубцы</category>
+            <category id="960" parentId="873">Разжимы для стопорных колец</category>
+            <category id="959" parentId="873">Просекатели</category>
+            <category id="893" parentId="873">Зажимы с фиксатором</category>
+            <category id="895" parentId="873">Инструменты для зачистки и обжима</category>
+            <category id="900" parentId="873">Клещи</category>
+            <category id="901" parentId="900">Клещи переставные</category>
+            <category id="902" parentId="900">Клещи торцевые</category>
+            <category id="968" parentId="873">Трансформеры</category>
+            <category id="928" parentId="873">Молотки</category>
+            <category id="929" parentId="928">Молотки рихтовочные</category>
+            <category id="930" parentId="928">Молотки с деревянной рукояткой</category>
+            <category id="931" parentId="928">Молотки с фибергласовой рукояткой</category>
+            <category id="932" parentId="928">Молотки специальные</category>
+            <category id="933" parentId="928">Молотки цельнокованые</category>
+            <category id="934" parentId="928">Молотки-гвоздодеры</category>
+            <category id="963" parentId="928">Рукоятки для молотка</category>
+            <category id="925" parentId="873">Кувалды</category>
+            <category id="926" parentId="925">Кувалды с деревянной рукояткой</category>
+            <category id="927" parentId="925">Кувалды с фибергласовой рукояткой</category>
+            <category id="962" parentId="925">Рукоятки для кувалды</category>
+            <category id="896" parentId="873">Киянки</category>
+            <category id="897" parentId="896">Киянки деревянные</category>
+            <category id="898" parentId="896">Киянки резиновые</category>
+            <category id="937" parentId="873">Напильники</category>
+            <category id="940" parentId="937">Напильники (наборы)</category>
+            <category id="941" parentId="937">Напильники квадратные</category>
+            <category id="939" parentId="937">Напильники круглые</category>
+            <category id="942" parentId="937">Напильники плоские</category>
+            <category id="943" parentId="937">Напильники полукруглые</category>
+            <category id="938" parentId="937">Напильники трехгранные</category>
+            <category id="964" parentId="937">Ручки для напильников</category>
+            <category id="936" parentId="873">Надфили</category>
+            <category id="874" parentId="873">Биты</category>
+            <category id="875" parentId="874">Адаптеры и переходники</category>
+            <category id="876" parentId="874">Биты наборы</category>
+            <category id="878" parentId="874">Биты с торцевыми головками</category>
+            <category id="883" parentId="873">Головки сменные</category>
+            <category id="884" parentId="883">Головки многоразмерные</category>
+            <category id="885" parentId="883">Головки с битой</category>
+            <category id="886" parentId="883">Головки свечные</category>
+            <category id="887" parentId="883">Головки торцевые</category>
+            <category id="888" parentId="883">Головки ударные</category>
+            <category id="889" parentId="883">Головки удлиненные</category>
+            <category id="880" parentId="873">Воротки, удлинители, переходники</category>
+            <category id="881" parentId="880">Воротки</category>
+            <category id="957" parentId="880">Переходники</category>
+            <category id="971" parentId="880">Удлинители</category>
+            <category id="973" parentId="880">Шарниры карданные</category>
+            <category id="944" parentId="873">Отвертки</category>
+            <category id="975" parentId="944">Магнитные браслеты</category>
+            <category id="945" parentId="944">Отвертки (наборы)</category>
+            <category id="947" parentId="944">Отвертки PH</category>
+            <category id="948" parentId="944">Отвертки PZ</category>
+            <category id="949" parentId="944">Отвертки SL</category>
+            <category id="950" parentId="944">Отвертки диэлектрические</category>
+            <category id="951" parentId="944">Отвертки для точных работ</category>
+            <category id="952" parentId="944">Отвертки комбинированные</category>
+            <category id="953" parentId="944">Отвертки реверсивные</category>
+            <category id="954" parentId="944">Отвертки с набором бит</category>
+            <category id="955" parentId="944">Отвертки Т-образные</category>
+            <category id="946" parentId="944">Отвертки-пробники</category>
+            <category id="970" parentId="944">Ударные отвертки</category>
+            <category id="903" parentId="873">Ключи</category>
+            <category id="904" parentId="903">Ключи баллонные</category>
+            <category id="905" parentId="903">Ключи динамометрические</category>
+            <category id="906" parentId="903">Ключи для патрона от дрели</category>
+            <category id="907" parentId="903">Ключи имбусовые</category>
+            <category id="908" parentId="903">Ключи кольцевые ударные</category>
+            <category id="909" parentId="903">Ключи комбинированные</category>
+            <category id="910" parentId="903">Ключи комбинированные трещоточные</category>
+            <category id="911" parentId="903">Ключи комбинированные трещоточные, шарнирные</category>
+            <category id="912" parentId="903">Ключи накидные</category>
+            <category id="974" parentId="903">Ключи накидные трещоточные</category>
+            <category id="913" parentId="903">Ключи прокачные</category>
+            <category id="914" parentId="903">Ключи разводные</category>
+            <category id="915" parentId="903">Ключи рожковые</category>
+            <category id="916" parentId="903">Ключи свечные</category>
+            <category id="917" parentId="903">Ключи торцевые ступичные</category>
+            <category id="918" parentId="903">Ключи трубные рычажные</category>
+            <category id="919" parentId="903">Ключи трубчатые торцевые (наборы)</category>
+            <category id="920" parentId="903">Ключи угловые</category>
+            <category id="921" parentId="903">Ключи шарнирные</category>
+            <category id="922" parentId="903">Ключи-трещотки</category>
+            <category id="923" parentId="903">Ключи-трубки торцевые</category>
+            <category id="2091" parentId="903">Наборы ключей имбусовых</category>
+            <category id="961" parentId="903">Ремонтные наборы для трещоток</category>
+            <category id="894" parentId="873">Зубила</category>
+            <category id="882" parentId="873">Выколотки</category>
+            <category id="972" parentId="873">Чертилки, буравчики</category>
+            <category id="899" parentId="873">Клейма ударные</category>
+            <category id="966" parentId="873">Средства защиты рук</category>
+            <category id="965" parentId="873">Спецодежда</category>
+            <category id="2652" parentId="965">Полукомбинезоны</category>
+            <category id="2653" parentId="965">Куртки</category>
+            <category id="2654" parentId="965">Брюки</category>
+            <category id="977">Столярный инструмент</category>
+            <category id="978" parentId="977">Ломы и гвоздодеры</category>
+            <category id="979" parentId="978">Гвоздодеры</category>
+            <category id="2152" parentId="978">Ломы строительные</category>
+            <category id="982" parentId="977">Топоры и колуны</category>
+            <category id="983" parentId="982">Колуны</category>
+            <category id="2519" parentId="982">Рукоятки для колунов</category>
+            <category id="1000" parentId="982">Топоры</category>
+            <category id="2520" parentId="982">Топорища</category>
+            <category id="2527" parentId="977">Долота и стамески</category>
+            <category id="980" parentId="2527">Долота-стамески</category>
+            <category id="2518" parentId="2527">Долота-стамески наборы</category>
+            <category id="992" parentId="2527">Стамески</category>
+            <category id="2522" parentId="2527">Стамески наборы</category>
+            <category id="981" parentId="977">Кирки</category>
+            <category id="991" parentId="977">Рубанки</category>
+            <category id="985" parentId="977">Ножовки</category>
+            <category id="1001" parentId="985">Ножовки по гипсокартону</category>
+            <category id="986" parentId="985">Ножовки по дереву</category>
+            <category id="987" parentId="985">Ножовки по пенобетону</category>
+            <category id="988" parentId="977">Пилы</category>
+            <category id="984" parentId="977">Лобзики</category>
+            <category id="2521" parentId="984">Полотна для лобзиков</category>
+            <category id="999" parentId="977">Стусла</category>
+            <category id="2526" parentId="999">Пилы для стусла</category>
+            <category id="2525" parentId="999">Полотна для прецизионного стусла</category>
+            <category id="2524" parentId="999">Стусла пластиковые</category>
+            <category id="2523" parentId="999">Стусла прецизионные</category>
+            <category id="990" parentId="977">Резцы по дереву</category>
+            <category id="993" parentId="977">Струбцины</category>
+            <category id="994" parentId="993">Струбцины F-образные</category>
+            <category id="995" parentId="993">Струбцины G-образные</category>
+            <category id="996" parentId="993">Струбцины клещеобразные</category>
+            <category id="1004" parentId="993">Струбцины ленточные</category>
+            <category id="997" parentId="993">Струбцины угловые</category>
+            <category id="998" parentId="993">Стурбцины быстрозажимные</category>
+            <category id="2122" parentId="977">Верстаки</category>
+            <category id="868">Прочий инструмент</category>
+            <category id="1417" parentId="868">Горелки газовые</category>
+            <category id="1095" parentId="868">Замки</category>
+            <category id="1428" parentId="1095">Навесные</category>
+            <category id="1429" parentId="1095">Накладные и врезные</category>
+            <category id="1438" parentId="1095">Тросовые и цепные</category>
+            <category id="1419" parentId="868">Изделия канатно-веревочные</category>
+            <category id="2571" parentId="1419">Веревки</category>
+            <category id="2572" parentId="1419">Канаты</category>
+            <category id="2575" parentId="1419">Фалы</category>
+            <category id="2576" parentId="1419">Шнуры</category>
+            <category id="2577" parentId="1419">Шпагаты</category>
+            <category id="2573" parentId="1419">Наборы шпагатов</category>
+            <category id="2574" parentId="1419">Нити</category>
+            <category id="1425" parentId="868">Инструмент для пайки</category>
+            <category id="1431" parentId="1425">Паяльники электрические</category>
+            <category id="2582" parentId="1425">Наборы для пайки</category>
+            <category id="2578" parentId="1425">Припой</category>
+            <category id="1426" parentId="1425">Материалы и принадлежности для пайки</category>
+            <category id="2581" parentId="1425">Пасты</category>
+            <category id="2583" parentId="1425">Наборы пинцетов</category>
+            <category id="2580" parentId="1425">Выжигатели по дереву</category>
+            <category id="1420" parentId="868">Инструмент для прочистки труб</category>
+            <category id="2151" parentId="868">Клеевые пистолеты</category>
+            <category id="1421" parentId="868">Клеевые стержни</category>
+            <category id="1422" parentId="868">Лампы паяльные, керосиновые</category>
+            <category id="1423" parentId="868">Лестницы</category>
+            <category id="1424" parentId="868">Лупы</category>
+            <category id="1427" parentId="868">Мышеловки, крысоловки, кротоловки</category>
+            <category id="2147" parentId="868">Осветительное оборудование</category>
+            <category id="2149" parentId="2147">Лампы энергосберегающие</category>
+            <category id="2457" parentId="2147">Прожекторы</category>
+            <category id="2148" parentId="2147">Фонари</category>
+            <category id="1432" parentId="868">Петли гаражные</category>
+            <category id="1435" parentId="868">Стремянки</category>
+            <category id="1436" parentId="868">Сумки для инструмента</category>
+            <category id="2585" parentId="1436">Сумки, переноски</category>
+            <category id="2588" parentId="1436">Рюкзаки</category>
+            <category id="2586" parentId="1436">Жилеты</category>
+            <category id="2587" parentId="1436">Пояса, держатели</category>
+            <category id="2589" parentId="1436">Раскладки</category>
+            <category id="1439" parentId="868">Удлинители электрические</category>
+            <category id="1441" parentId="1439">Удлинители силовые</category>
+            <category id="1447" parentId="1439">Удлинители бытовые</category>
+            <category id="2119" parentId="1439">Удлинители бытовые рулетки</category>
+            <category id="1440" parentId="1439">Удлинители на пластиковой катушке</category>
+            <category id="1448" parentId="1439">Удлинители на стальной катушке</category>
+            <category id="2120" parentId="1439">Шнуры соединительные</category>
+            <category id="1442" parentId="868">Уплотнители</category>
+            <category id="869" parentId="868">Хозяйственные товары</category>
+            <category id="1415" parentId="869">Аксессуары для хранения и приготовления пищи</category>
+            <category id="1446" parentId="869">Ведра пластмассовые</category>
+            <category id="2498" parentId="869">Ветошь</category>
+            <category id="1416" parentId="869">Вешалки для одежды</category>
+            <category id="1418" parentId="869">Губки</category>
+            <category id="2150" parentId="869">Мыло</category>
+            <category id="1430" parentId="869">Пакеты, мешки, упаковка</category>
+            <category id="870" parentId="869">Салфетки</category>
+            <category id="871" parentId="869">Свечи</category>
+            <category id="1437" parentId="869">Тазы пластмассовые</category>
+            <category id="1453" parentId="869">Товары по уходу за одеждой и обувью</category>
+            <category id="872" parentId="869">Туалетная бумага</category>
+            <category id="1443" parentId="869">Швабры</category>
+            <category id="1444" parentId="869">Шила</category>
+            <category id="1445" parentId="869">Щетки, совки, веники</category>
+            <category id="1070" parentId="868">Ящики для инструмента, органайзеры</category>
+            <category id="2569" parentId="1070">Лотки</category>
+            <category id="2568" parentId="1070">Органайзеры</category>
+            <category id="2720" parentId="1070">Органайзеры</category>
+            <category id="2570" parentId="1070">Полки для инструмента</category>
+            <category id="2567" parentId="1070">Ящики для инструмента</category>
+        </categories>
+        <offers>
+            <offer id="33572" available="true">
+                <vendor>PALISAD</vendor>
+                <vendorCode>12</vendorCode>
+                <sku>67107</sku>
+                <name>Шланг поливочный армированный 3 слойный ТЭП 1/2'', 35 м, лазурный Palisad</name>
+                <categoryId>1226</categoryId>
+                <description>Шланг поливочный армированный 3-слойный ТЭП (термоэластопласт) Palisad 67107 диаметром 1/2″ и длиной 35 м, лазурный, пригодится владельцам дачных участков и сотрудникам коммунальных служб для создания системы орошения. Он облегчает труд пользователя, позволяя быстро восполнять водный баланс почвы. Длины 35 м достаточно для орошения небольших участков.ПреимуществаПрочность и долговечность — шланг из ТЭП, армированный суперпрочной полиэстерной нитью плотностью 93 ТЭКС, устойчив к повышенным нагрузкам на изгиб, скручиваниям и обладает высокой морозоустойчивостью.Высокий ресурс — армирующая нить с инновационным плетением обеспечивает равномерное распределение нагрузки.Всепогодность — температурный диапазон эксплуатации от -30 до +70°С.Устойчивость к УФ-лучам и механическим воздействиям — на поверхность шланга нанесено защитное покрытие.Высокие эксплуатационные характеристики — толщина стенок составляет 2,5 мм, поэтому шланг выдерживает разрывные нагрузки до 6 бар.Экологичность — термоэластопласт и армирующая нить не содержат вредных веществ.</description>
+                <url>https://instrument.ru/shlang-polivochnyy-armirovannyy-3-sloynyy-tep-1-2-35-m-lazurnyy-palisad-67107</url>
+                <picture>https://instrument.ru/upload/iblock/0eb/yz1h2x12p7jdh1cp65qy7ytytiemnsqr/67107_001.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/05f/oagvq41d8mez42d7e8a4vd6ru1z7z5a6/67107_002.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/0c0/d4djb3nq309pnc9sv1pa68v6yxt7ereo/67107_003.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/6bc/dkyc5hyolc6z40vpoqp31q2dzzs5hbqo/Novinka_Palisad_SHlang_polivochnyy_armirovannyy_67106_67113_page_0001.jpg</picture>
+                <param name="Ссылка на сертификат">https://instrument.ru/upload/iblock/bb7/2fp41041vh1v6e1xmp2byxrh6yf47p0u/15.pdf</param>
+                <param name="Бренд ">PALISAD</param>
+                <param name="Новый товар">Y</param>
+                <param name="Группа товаров">Ручной инструмент</param>
+                <param name="Штрихкод">4606800095312</param>
+                <param unit="кг" name="Вес, кг">5.88</param>
+                <param name="Материал">ТЭП</param>
+                <param unit="мм" name="Длина в упаковке, мм">390</param>
+                <param unit="мм" name="Ширина в упаковке, мм">390</param>
+                <param unit="мм" name="Высота в упаковке, мм">150</param>
+                <param unit="м" name="Длина, м">35</param>
+                <param name="Тип упаковки">полиэтилен</param>
+                <param name="Страна бренда">Германия</param>
+                <param name="Страна производства">Россия</param>
+                <param unit="дюйм" name="Диаметр, дюйм">1/2</param>
+                <param name="Комплектация">Шланг - 1 шт</param>
+                <param name="Количество слоев">3</param>
+                <param unit="мм" name="Толщина стенки, мм">2.5</param>
+                <param name="Id товара со старого сайта">48204</param>
+                <oldprice>1663.00</oldprice>
+                <param name="Розничная цена">0.00</param>
+                <currencyId>RUB</currencyId>
+                <price>1313.77</price>
+                <available>Под заказ</available>
+            </offer>
+            <offer id="24161" available="true">
+                <vendor>СИБРТЕХ</vendor>
+                <vendorCode>2</vendorCode>
+                <sku>94012</sku>
+                <name>Веревка льнопеньковая, D 12 мм, L 10 м, крученая Россия Сибртех</name>
+                <categoryId>2571</categoryId>
+                <description>Веревка льнопеньковая крученая Сибртех 94012, 12 мм, L 10 м, крепко связывает и закрепляет различные предметы и грузы. Она применяется в быту, сельском хозяйстве, торговле, промышленности и строительстве.ПреимуществаВеревка прочная и надежная - выдерживает нагрузку на разрыв 480 кгс.Подходит для упаковки крупных предметов - длина бечевки 10 метров.Веревка устойчива к ультрафиолету и безопасна для окружающей среды, так как изготовлена из натурального материала.</description>
+                <url>https://instrument.ru/verevka-lnopenkovaya-d-12-mm-l-10-m-kruchenaya-rossiya-sibrtekh-94012</url>
+                <picture>https://instrument.ru/upload/iblock/d49/xjphgmv5g38i7wt0bhip5223ixb80101/61006.970.jpg</picture>
+                <param name="Ссылка на сертификат">https://instrument.ru/upload/iblock/7b6/6okmjyt47l6on764vb9c9vreosz4a684/101_ks_87.pdf</param>
+                <param name="Бренд ">СИБРТЕХ</param>
+                <param name="Группа товаров">Ручной инструмент</param>
+                <param name="Штрихкод">4606800043726</param>
+                <param unit="кг" name="Вес, кг">0.95</param>
+                <param name="Материал">лубяное волокно</param>
+                <param unit="мм" name="Длина в упаковке, мм">410</param>
+                <param unit="мм" name="Ширина в упаковке, мм">160</param>
+                <param unit="мм" name="Высота в упаковке, мм">70</param>
+                <param unit="м" name="Длина, м">10</param>
+                <param name="Страна производства">Россия</param>
+                <param unit="мм" name="Диаметр, мм">12</param>
+                <param name="Комплектация">Веревка - 1 шт</param>
+                <param unit="кгс" name="Разрывная нагрузка, кгс">480</param>
+                <param name="Id товара со старого сайта">13786</param>
+                <oldprice>275.00</oldprice>
+                <param name="Розничная цена">0.00</param>
+                <currencyId>RUB</currencyId>
+                <price>217.25</price>
+                <available>Под заказ</available>
+            </offer>
+            <offer id="19477" available="true">
+                <vendor>RUSSIA</vendor>
+                <vendorCode>1</vendorCode>
+                <sku>62290</sku>
+                <name>Плоскорез &quot;Тепличный&quot;, 120 х 885 мм, деревянный черенок, Судогда, Россия</name>
+                <categoryId>1186</categoryId>
+                <description>Плоскорез «Тепличный» 62290 с рабочей частью в виде скобы шириной 120 мм и деревянным черенком длиной 800 мм пригодится садоводам и огородникам для культивации земли безотвальным методом. Он рассчитан на прополку и окучивание тяжелой почвы. За счет короткого черенка и узкого носика инструмент оптимален для работы в теплицах и парниках.ПреимуществаЭффективная работа — режущие части прошли закалку и остро заточены.Устойчивость к разрушению — рабочая часть покрыта антикоррозийным маслом.Регулировка наклона рабочей части — инструмент подходит пользователям разного роста.Комфортная эксплуатация — деревянный шлифованный черенок удобно ложится в руки.Оригинальная продукция — на режущей пластине и черенке имеются товарные знаки.</description>
+                <url>https://instrument.ru/ploskorez-teplichnyy-120-kh-885-mm-derevyannyy-cherenok-sudogda-rossiya-62290</url>
+                <picture>https://instrument.ru/upload/iblock/1bd/lwj38h8l3va8kc4e0k1eqlfwa0oktla1/62290.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/c34/c2w5yi60yl3cqol82f6etg2qk3h3vm3y/62290_002.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/d29/nrrl334ycsy3k83tot9iwf7652rsr5ab/62290_003.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/b97/tirxbwdwh6f5k25il6w0ht1zx6zv63ma/62290_004.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/13d/3ojx5nm287xeg2zxbut5fi5575qn6ld0/62290_005.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/911/zxjvhu1k96mu409jn22njo1o8oh8aptv/62290_006.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/1db/bkoxvuysozox2b5f6i9bolmbcsu4blj6/62290_007.jpg</picture>
+                <param name="Ссылка на сертификат">https://instrument.ru/upload/iblock/6d2/rtk0g32pcuqy1bktb9jf13kvxsox01ar/PFL4.RU.0501.N.00061.pdf</param>
+                <param name="Бренд ">RUSSIA</param>
+                <param name="Группа товаров">Ручной инструмент</param>
+                <param name="Штрихкод">4044996219509</param>
+                <param unit="кг" name="Вес, кг">0.4</param>
+                <param unit="мм" name="Длина в упаковке, мм">885</param>
+                <param unit="мм" name="Ширина в упаковке, мм">120</param>
+                <param unit="мм" name="Высота в упаковке, мм">85</param>
+                <param unit="мм" name="Длина, мм">885</param>
+                <param name="Тип упаковки">стикер</param>
+                <param name="Страна бренда">Россия</param>
+                <param name="Страна производства">Россия</param>
+                <param unit="мм" name="Ширина рабочей части, мм">120</param>
+                <param unit="мм" name="Общая длина инструмента, мм">885</param>
+                <param name="Комплектация">Плоскорез в сборе - 1 шт</param>
+                <param name="Покрытие рабочей части">эмаль порошковая</param>
+                <param name="Id товара со старого сайта">31858</param>
+                <oldprice>279.00</oldprice>
+                <param name="Розничная цена">0.00</param>
+                <currencyId>RUB</currencyId>
+                <price>220.41</price>
+                <available>В наличии</available>
+            </offer>
+            <offer id="15490" available="true">
+                <vendor>MATRIX</vendor>
+                <vendorCode>5</vendorCode>
+                <sku>10624</sku>
+                <name>Молоток кровельщика, 600 г, фибергласовая обрезиненная рукоятка Matrix</name>
+                <categoryId>932</categoryId>
+                <description>Молоток кровельщика Matrix 10624 с рабочей головкой весом 600 г и фибергласовой обрезиненной рукояткой предназначен для выполнения кровельных работ. Способен забивать и придавать ровную форму крупным гвоздям, а также пробивать отверстия и отгибать кромки кровельного материала. На рабочей поверхности бойка имеются насечки, которые не позволяют ему соскользнуть с гвоздя.ПреимуществаОптимальные показатели прочности и долговечности — головка изготовлена из конструкционной стали 45.Износостойкость — боек, закаленный до твердости 45-50 HRC, устойчив к повреждениям даже при интенсивных нагрузках.Удобная работа в труднодоступных местах — магнитный фиксатор в верхней части головки позволяет действовать одной рукой.Защита от образования коррозии — рабочие поверхности покрыты бесцветным лаком.Надежная рукоятка — фибергласовый стержень придает ей жесткость и устойчивость к механическим воздействиям.Комфортная работа — рукоятка эффективно гасит вибрации при ударе, имеет вентиляционные отверстия и обрезиненную поверхность, благодаря которой не выскальзывает из ладони.Удобное хранение — отверстие на конце рукоятки позволяет подвешивать молоток-гвоздодер на крючок или гвоздь.</description>
+                <url>https://instrument.ru/molotok-krovelshchika-600-g-fiberglasovaya-obrezinennaya-rukoyatka-matrix-10624</url>
+                <picture>https://instrument.ru/upload/iblock/97d/eniv44qor2kr86mn10ygy03oc22h2447/93600.970.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/8f5/6kp5a69dekwuk8r1mqnz77tevju2rvg9/93601.970.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/8ce/t3pg4vo1l54n1n8rl7cd865y2a291515/93602.970.jpg</picture>
+                <picture>https://instrument.ru/upload/iblock/387/o4wrvotkfk1c3bst243af2lt37enzs6r/93603.970.jpg</picture>
+                <param name="Ссылка на сертификат">https://instrument.ru/upload/iblock/639/2t3ea030iol6yb0v2e4hyt5team63wry/15.pdf</param>
+                <param name="Бренд ">MATRIX</param>
+                <param name="Группа товаров">Ручной инструмент</param>
+                <param name="Штрихкод">4044996182445</param>
+                <param unit="кг" name="Вес, кг">0.6</param>
+                <param unit="мм" name="Длина в упаковке, мм">330</param>
+                <param unit="мм" name="Ширина в упаковке, мм">168</param>
+                <param unit="мм" name="Высота в упаковке, мм">26</param>
+                <param name="Страна производства">Китай</param>
+                <param unit="г" name="Вес бойка, г">600</param>
+                <param name="Форма бойка">квадрат</param>
+                <param name="Комплектация">Молоток - 1 шт</param>
+                <param name="Материал бойка">сталь</param>
+                <param name="Материал рукоятки">фиберглас, пластик, резина</param>
+                <param name="Id товара со старого сайта">46014</param>
+                <oldprice>585.30</oldprice>
+                <param name="Розничная цена">0.00</param>
+                <currencyId>RUB</currencyId>
+                <price>462.39</price>
+                <available>В наличии</available>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>

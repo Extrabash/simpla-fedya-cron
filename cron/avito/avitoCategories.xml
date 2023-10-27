@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodsTypes>
+    <GoodsType>
+        <name>Ремонт и строительство</name>
+        <fieldType>Category</fieldType>
+        <GoodsTypes>
+            <GoodsType>
+                <name>Инструменты</name>
+                <fieldType>GoodsType</fieldType>
+                <GoodsTypes>
+                    <GoodsType>
+                        <name>Электроинструменты</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Болгарки (УШМ)</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Дрели и шуруповерты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Миксеры строительные</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Отбойные молотки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Перфораторы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Пилы электрические</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Пистолеты монтажные</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Плиткорезы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Пылесосы строительные</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Фены строительные</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Фрезеры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Шлифовальные машины</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Электролобзики</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Электрорубанки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Другое</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Ручные инструменты</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Домкраты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Ключи</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Малярные инструменты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Наборы инструментов</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Ножницы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Отвёртки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Пилы и лобзики</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Пистолеты для пены и герметика</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Плиткорезы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Столярные инструменты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Тиски и струбцины</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Ударно-рычажные инструменты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Другое</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Измерительные инструменты</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Лазерные рулетки и дальномеры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Лазерные уровни и нивелиры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Пирометры и прочие детекторы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Разметочные инструменты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Рулетки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Ручные измерительные инструменты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Строительные уровни</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Штативы, рейки, держатели</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Электроизмерительные приборы и тестеры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Другое</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Газовое и сварочное оборудование</name>
+                        <name>Измерительные инструменты</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Аксессуары и комплектующие для сварки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Газовые горелки и паяльные лампы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Маски и перчатки для сварки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Паяльники и аксессуары</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Сварочные аппараты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Электроды, проволока, прутки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Расходные материалы и оснастка</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Алмазные диски</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Буры, долота, пики</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Зарядные устройства и аккумуляторы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Коронки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Отрезные круги и пильные диски</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Патроны и переходники</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Свёрла</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Шлифовальные круги и насадки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Другое</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Другие инструменты</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Аппараты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Верстаки и оборудование для мастерской</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Компрессоры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Лестницы, стремянки, вышки-туры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Насосы и комплектующие</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Такелаж</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Силовая, строительная техника и комплектующие</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Бетономешалки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Вибраторы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Виброплиты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Станки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Установки для бурения</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Электрика</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Генераторы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Двигатели</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Кабели и провода</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Стабилизаторы напряжения</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Трансформаторы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Другое</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Бензопилы</name>
+                        <fieldType>ToolType</fieldType>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Спецодежда и средства защиты</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Каски строительные</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Маски, очки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Наушники и беруши</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Неодимовые магниты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Огнетушители</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Перчатки, рукавицы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Пояса, ремни, сумки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Респираторы</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Спецодежда, обувь и наколенники</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Другое</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>
+                    </GoodsType>
+                    <GoodsType>
+                        <name>Садовая техника</name>
+                        <fieldType>ToolType</fieldType>
+                        <GoodsTypes>
+                            <GoodsType>
+                                <name>Газонокосилки и триммеры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Канистры</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Лопаты</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                            <GoodsType>
+                                <name>Тачки и тележки</name>
+                                <fieldType>ToolSubType</fieldType>
+                            </GoodsType>
+                        </GoodsTypes>  
+                    </GoodsType>
+                </GoodsTypes>
+            </GoodsType>
+        </GoodsTypes>
+    </GoodsType>
+</GoodsTypes>
