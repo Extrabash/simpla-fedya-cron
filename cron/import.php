@@ -21,10 +21,14 @@ class ImportAjax extends UPcms
         'category_updated' => 0,
     );
 
+    // Будем запоминать, какие картинки записали
+    // private $imagesLoaded = array();
+
     //private $vendorNames = array('ЗУБР');
     
     protected $tempdir;
     protected $logdir = 'logs/';
+    protected $imageLogFileName = 'imageLogFile.txt';
     
     const LOGGING = 1;
     // Удалять все товары
@@ -46,22 +50,20 @@ class ImportAjax extends UPcms
     
     public function __construct()
     {
-    	parent::__construct();
+        parent::__construct();
 
         $this->tempdir = $this->config->root_dir.'cron/';
         $this->logdir = $this->config->root_dir.'cron/'.$this->logdir;
         
-        if (self::TRUNCATE_TABLE)
+        if (self::TRUNCATE_TABLE) {
             $this->truncate();
-        
-        
+        }
     }
     
     
     public function run()
     {
-        if (self::STOCK_NULLING)
-        {
+        if (self::STOCK_NULLING) {
             $query = $this->db->placehold("
                 UPDATE __variants
                 SET stock = 0
@@ -69,46 +71,49 @@ class ImportAjax extends UPcms
             $this->db->query($query);
         }
         
-    	$this->log(PHP_EOL.date('d-m-Y H:i:s'));
-    	$this->log('START '.__CLASS__);
+        $this->log(PHP_EOL.date('d-m-Y H:i:s'));
+        $this->log('START '.__CLASS__);
         
         
 
-        if (self::DEBUG)
-        {
+        if (self::DEBUG) {
             $temp_filename = $this->tempdir.'importTest.xml';
             $uploaded = true;
             $this->log('DEBUG upload');
-        }    
-        else
-        {
+        } else {
             $temp_filename = $this->tempdir.'import.xml';
-            if (self::DOWNLOAD_FILE)
+            if (self::DOWNLOAD_FILE) {
                 $uploaded = $this->load_file($this->url, $temp_filename);
-            else
+            } else {
                 $uploaded = true;
+            }
             $this->log('upload');
-        }    
+        }
+
         
         
-        if ($uploaded)
-        {
+        if ($uploaded) {
+
+            // Создаем/открываем файл с картинками в режиме записи
+            $imageLogFile = fopen($this->tempdir.$this->imageLogFileName, 'w');
+            fclose($imageLogFile);
+
             $doc = new DOMDocument;
 
-            $this->removeImages();
+            // if (!self::DEBUG) {
+            //     $this->removeImages();
+            // }
 
             $reader = new XMLReader();
             $reader->open($temp_filename);
             
 
-            while ($reader->read())
-            {
+            while ($reader->read()) {
 
-                if ($reader->name == 'category' && XMLReader::ELEMENT == $reader->nodeType)
-                {
+                if ($reader->name == 'category' && XMLReader::ELEMENT == $reader->nodeType) {
                     $node = simplexml_import_dom($doc->importNode($reader->expand(), true));
                     
-                    if (self::IMPORT_CATEGORIES){
+                    if (self::IMPORT_CATEGORIES) {
                         $parent_id = (string)$node['parentId'];
                         $item = array(
                             'id' => (string)$node['id'],
@@ -121,56 +126,55 @@ class ImportAjax extends UPcms
                     }
                 }
 
-                if ($reader->name == 'offer' && XMLReader::ELEMENT == $reader->nodeType)
-                {
+                if ($reader->name == 'offer' && XMLReader::ELEMENT == $reader->nodeType) {
 
-                    $node = simplexml_import_dom($doc->importNode($reader->expand(), true)); 
+                    $node = simplexml_import_dom($doc->importNode($reader->expand(), true));
                     //if(in_array((string)$node->vendor, $this->vendorNames))
                     //{
-                        // Получим свойства
-                        $features = array();
-                        $dom_element = dom_import_simplexml($node);
-                        foreach ( $dom_element->childNodes as $dom_child )
-                        {
-                            switch ( $dom_child->nodeType )
-                            {
-                                case XML_ELEMENT_NODE:
-                                    $tmpName = simplexml_import_dom($dom_child);
-                                    $tmpName = (string) $tmpName['name'];
+                    // Получим свойства
+                    $features = array();
+                    $dom_element = dom_import_simplexml($node);
+                    foreach ($dom_element->childNodes as $dom_child) {
+                        switch ($dom_child->nodeType) {
+                            case XML_ELEMENT_NODE:
+                                $tmpName = simplexml_import_dom($dom_child);
+                                $tmpName = (string) $tmpName['name'];
                                     
-                                    if(!empty($tmpName))
-                                        $features[$tmpName] = $dom_child->nodeValue;
+                                if(!empty($tmpName)) {
+                                    $features[$tmpName] = $dom_child->nodeValue;
+                                }
                                
                                 break;
-                            }
                         }
+                    }
 
-                        // Проверяем наличие
-                        $available = (string)$node->available;
+                    // Проверяем наличие
+                    $available = (string)$node->available;
 
-                        $stock = 0;
-                        // if($available == "Под заказ")
-                        //     $stock = 0;
-                        if($available == "В наличии")
-                            $stock = NULL;
+                    $stock = 0;
+                    // if($available == "Под заказ")
+                    //     $stock = 0;
+                    if($available == "В наличии") {
+                        $stock = null;
+                    }
 
-                        $item = array(
-                            'id' => (string)$node['id'],
-                            'url' => (string)$node->url,
-                            'price' => (string)$node->price,
-                            'description' => (string)$node->description,
-                            'image' => $node->picture,
-                            'name' => (string)$node->name,
-                            'category_id' => (string)$node->categoryId,
-                            'sku' => (string)$node->sku,
-                            'brand' => (string)$node->vendor,
-                            'stock' => $stock,
-                            'features' => $features
-                        );
+                    $item = array(
+                        'id' => (string)$node['id'],
+                        'url' => (string)$node->url,
+                        'price' => (string)$node->price,
+                        'description' => (string)$node->description,
+                        'image' => $node->picture,
+                        'name' => (string)$node->name,
+                        'category_id' => (string)$node->categoryId,
+                        'sku' => (string)$node->sku,
+                        'brand' => (string)$node->vendor,
+                        'stock' => $stock,
+                        'features' => $features
+                    );
 
-                        // echo '<hr />'.__FILE__.':'.__LINE__.'<pre>'; var_dump($item); echo '</pre>';
+                    // echo '<hr />'.__FILE__.':'.__LINE__.'<pre>'; var_dump($item); echo '</pre>';
 
-                        $this->import_item($item);
+                    $this->import_item($item);
                     //}
                 }
             }
@@ -179,6 +183,12 @@ class ImportAjax extends UPcms
         
             $reader->close();
             unset($reader);
+
+            
+            // if ($imageLogFile && $this->imagesLoaded) {
+            //     fwrite($imageLogFile, implode(PHP_EOL, $this->imagesLoaded));
+            // }
+           
         
             $this->report();
         }
@@ -205,8 +215,9 @@ class ImportAjax extends UPcms
         
     private function truncate()
     {
-        if (self::TRUNCATE_CATEGORIES)
+        if (self::TRUNCATE_CATEGORIES) {
             $this->db->query("TRUNCATE TABLE __categories");
+        }
         $this->db->query("TRUNCATE TABLE __products");
         $this->db->query("TRUNCATE TABLE __variants");
         $this->db->query("TRUNCATE TABLE __products_categories");
@@ -214,10 +225,9 @@ class ImportAjax extends UPcms
     }
     
     private function import_category($item)
-    {        
+    {
         $item_id = (int)$item['id'];
-        if (!empty($item_id))
-        {
+        if (!empty($item_id)) {
             $query = $this->db->placehold("
                 SELECT id 
                 FROM __categories 
@@ -225,8 +235,7 @@ class ImportAjax extends UPcms
             ", $item['id']);
             $this->db->query($query);
 
-            if (!($category_id = $this->db->result('id')))
-            {
+            if (!($category_id = $this->db->result('id'))) {
                 $add_category = array(
                     'name' => $item['name'],
                     'meta_title' => $item['name'],
@@ -237,9 +246,7 @@ class ImportAjax extends UPcms
                 $category_id = $this->categories->add_category($add_category);
                 
                 $this->counter['category_added']++;
-            }
-            else
-            {
+            } else {
                 $this->counter['category_updated']++;
             }
 
@@ -259,12 +266,13 @@ class ImportAjax extends UPcms
     }
 
     // Импорт одного товара $item[column_name] = value;
-	private function import_item($item)
-	{
-        if (empty($item['id']))
+    private function import_item($item)
+    {
+        if (empty($item['id'])) {
             return;
+        }
 
-        //echo __FILE__.' '.__LINE__.'<br /><pre>';var_dump($item);echo '</pre><hr />';        
+        //echo __FILE__.' '.__LINE__.'<br /><pre>';var_dump($item);echo '</pre><hr />';
 
         // ищем или создаем продукт
         $query = $this->db->placehold("
@@ -283,15 +291,13 @@ class ImportAjax extends UPcms
             'external_id' => $item['id'],
         );
         
-        if (!($product_id = $this->db->result('id')))
-        {
+        if (!($product_id = $this->db->result('id'))) {
             $product_id = $this->products->add_product($add_product);
             $this->counter['product_added']++;
-        }
-        else
-        {
-            if(self::UPDATE_PRODUCTS)
+        } else {
+            if(self::UPDATE_PRODUCTS) {
                 $this->products->update_product($add_product);
+            }
             $this->counter['product_updated']++;
         }
 
@@ -299,11 +305,13 @@ class ImportAjax extends UPcms
         // Добавим бренд
         // Найдем его по имени
         $this->db->query('SELECT id FROM __brands WHERE name=?', $brand_name);
-        if(!$brand_id = $this->db->result('id'))
+        if(!$brand_id = $this->db->result('id')) {
             // Создадим, если не найден
-            $brand_id = $this->brands->add_brand(array('name'=>$brand_name, 'meta_title'=>$brand_name, 'meta_keywords'=>$brand_name, 'meta_description'=>$brand_name, 'url'=>$this->translit($brand_name)));	
-        if(!empty($brand_id))
+            $brand_id = $this->brands->add_brand(array('name'=>$brand_name, 'meta_title'=>$brand_name, 'meta_keywords'=>$brand_name, 'meta_description'=>$brand_name, 'url'=>$this->translit($brand_name)));
+        }
+        if(!empty($brand_id)) {
             $this->products->update_product($product_id, array('brand_id'=>$brand_id));
+        }
         
         // ишем или создаем вариант
         $query = $this->db->placehold("
@@ -313,16 +321,13 @@ class ImportAjax extends UPcms
         ", $product_id);
         $this->db->query($query);
         
-        if ($variant_id = $this->db->result('id'))
-        {
+        if ($variant_id = $this->db->result('id')) {
             $this->variants->update_variant($variant_id, array(
                 'price' => $item['price'],
                 //'stock' => empty($item['stock']) ? 0 : NULL
                 'stock' => $item['stock']
             ));
-        }
-        else
-        {
+        } else {
             $variant_id = $this->variants->add_variant(array(
                 'sku' => $item['sku'],
                 'price' => $item['price'],
@@ -339,42 +344,45 @@ class ImportAjax extends UPcms
         ", $item['category_id']);
         $this->db->query($query);
         
-        if ($category_id = $this->db->result('id'))
-        {
+        if ($category_id = $this->db->result('id')) {
             $this->categories->add_product_category($product_id, $category_id);
         }
         
         // изображения
-        if (!empty($item['image']))
-        {
+        if (!empty($item['image'])) {
 
             // Удаляем изображения старые
-			// $old_images = $this->get_images(array('product_id'=>$id));
+            // $old_images = $this->get_images(array('product_id'=>$id));
             // if($old_images)
             // {
             //     foreach($old_images as $i)
             //         $this->products->delete_image($i->id);
             // }
 
-            if($item['image']->count() > 1)
-                foreach($item['image'] as $img)
-                    $this->importImage((string)$img, $product_id);  
-            else
+            if($item['image']->count() > 1) {
+                foreach($item['image'] as $img) {
+                    $this->importImage((string)$img, $product_id);
+                }
+            } else {
                 $this->importImage((string)$item['image'], $product_id);
+            }
         
-        //echo __FILE__.' '.__LINE__.'<br /><pre>';var_dump($pathinfo);echo '</pre><hr />';
+            //echo __FILE__.' '.__LINE__.'<br /><pre>';var_dump($pathinfo);echo '</pre><hr />';
         }
 
         // Фичи
-        if (!empty($item['features']))
-            foreach($item['features'] as $feature => $option)
+        if (!empty($item['features'])) {
+            foreach($item['features'] as $feature => $option) {
                 $this->importFeature($feature, $option, $product_id, $category_id);
+            }
+        }
 
     
 
     }
 
-    protected function importImage($image, $product_id){
+    protected function importImage($image, $product_id)
+    {
 
         //$image = str_replace('http', 'https', $image);
         $pathinfo = pathinfo($image);
@@ -384,13 +392,11 @@ class ImportAjax extends UPcms
         
         $local_filename = $this->config->root_dir.$this->config->original_images_dir.$filename;
 
-        if (!file_exists($local_filename))
-        {
+        if (!file_exists($local_filename)) {
             $this->load_file($image, $local_filename);
         }
         
-        if (file_exists($local_filename) && getimagesize($local_filename))
-        {
+        if (file_exists($local_filename) && getimagesize($local_filename)) {
             $query = $this->db->placehold("
                 SELECT id 
                 FROM __images 
@@ -399,14 +405,21 @@ class ImportAjax extends UPcms
             ", $product_id, $filename);
             $this->db->query($query);
             
-            if (!($image_id = $this->db->result('id')))
-            {
+            if (!($image_id = $this->db->result('id'))) {
                 $this->products->add_image($product_id, $filename);
             }
+
+            //$this->imagesLoaded[] = $filename;
+
+            // Открываем файл в режиме добавления и записываем информацию о файле
+            $fileHandle = fopen($this->tempdir.$this->imageLogFileName, 'a');
+            fwrite($fileHandle, $filename . PHP_EOL); // Добавляем PHP_EOL для перехода на новую строку
+            fclose($fileHandle);
         }
     }
 
-    protected function importFeature($feature, $option, $product_id, $category_id){
+    protected function importFeature($feature, $option, $product_id, $category_id)
+    {
 
         // Сначала проверим есть ли вообще такая фича
         $query = $this->db->placehold("
@@ -417,8 +430,7 @@ class ImportAjax extends UPcms
 
         $this->db->query($query);
         
-        if (!($feature_id = $this->db->result('id')))
-        {
+        if (!($feature_id = $this->db->result('id'))) {
             $feature_id = $this->features->add_feature(array('name'=>$feature));
         }
         
@@ -431,15 +443,13 @@ class ImportAjax extends UPcms
 
     protected function log($message)
     {
-        if (self::LOGGING)
-        {
+        if (self::LOGGING) {
             $maxlogsize = 1024*1024;
             $logfile = $this->logdir.'log3.htm';
             
-            if (filesize($logfile) > $maxlogsize)
-            {
+            if (filesize($logfile) > $maxlogsize) {
                 $new_logfile = $this->logdir.date('YmdHis').'.htm';
-                rename ($logfile, $new_logfile);
+                rename($logfile, $new_logfile);
                 file_put_contents($logfile, '');
             }
             file_put_contents($logfile, $message.PHP_EOL, FILE_APPEND);
@@ -467,22 +477,22 @@ class ImportAjax extends UPcms
         curl_setopt($curl, CURLOPT_FILE, $file); #output
         $result = curl_exec($curl);
         curl_close($curl);
-        fclose($file);  
+        fclose($file);
         
-        return $result;      
+        return $result;
     }
     
-   	protected function translit($text)
-	{
-		$ru = explode('-', "А-а-Б-б-В-в-Ґ-ґ-Г-г-Д-д-Е-е-Ё-ё-Є-є-Ж-ж-З-з-И-и-І-і-Ї-ї-Й-й-К-к-Л-л-М-м-Н-н-О-о-П-п-Р-р-С-с-Т-т-У-у-Ф-ф-Х-х-Ц-ц-Ч-ч-Ш-ш-Щ-щ-Ъ-ъ-Ы-ы-Ь-ь-Э-э-Ю-ю-Я-я"); 
-		$en = explode('-', "A-a-B-b-V-v-G-g-G-g-D-d-E-e-E-e-E-e-ZH-zh-Z-z-I-i-I-i-I-i-J-j-K-k-L-l-M-m-N-n-O-o-P-p-R-r-S-s-T-t-U-u-F-f-H-h-TS-ts-CH-ch-SH-sh-SCH-sch---Y-y---E-e-YU-yu-YA-ya");
+    protected function translit($text)
+    {
+        $ru = explode('-', "А-а-Б-б-В-в-Ґ-ґ-Г-г-Д-д-Е-е-Ё-ё-Є-є-Ж-ж-З-з-И-и-І-і-Ї-ї-Й-й-К-к-Л-л-М-м-Н-н-О-о-П-п-Р-р-С-с-Т-т-У-у-Ф-ф-Х-х-Ц-ц-Ч-ч-Ш-ш-Щ-щ-Ъ-ъ-Ы-ы-Ь-ь-Э-э-Ю-ю-Я-я");
+        $en = explode('-', "A-a-B-b-V-v-G-g-G-g-D-d-E-e-E-e-E-e-ZH-zh-Z-z-I-i-I-i-I-i-J-j-K-k-L-l-M-m-N-n-O-o-P-p-R-r-S-s-T-t-U-u-F-f-H-h-TS-ts-CH-ch-SH-sh-SCH-sch---Y-y---E-e-YU-yu-YA-ya");
 
-	 	$res = str_replace($ru, $en, $text);
-		$res = preg_replace("/[\s]+/ui", '-', $res);
-		$res = preg_replace('/[^\p{L}\p{Nd}\d-]/ui', '', $res);
-	 	$res = strtolower($res);
-	    return $res;  
-	}
+        $res = str_replace($ru, $en, $text);
+        $res = preg_replace("/[\s]+/ui", '-', $res);
+        $res = preg_replace('/[^\p{L}\p{Nd}\d-]/ui', '', $res);
+        $res = strtolower($res);
+        return $res;
+    }
 
     private function report()
     {
@@ -502,12 +512,13 @@ class ImportAjax extends UPcms
         echo '<li style="color:blue">Категорий обновлено: '.$this->counter['category_updated'].'</li>';
         echo '<li style="color:green">Продуктов добавлено: '.$this->counter['product_added'].'</li>';
         echo '<li style="color:blue">Продуктов обновлено: '.$this->counter['product_updated'].'</li>';
+        echo '<li style="color:blue">Картинок обновлено: '.count($this->imagesLoaded).'</li>';
         echo '</ul>';
         echo '</body>';
         echo '</html>';
         
     }
-    
+
 }
 
 $ajax = new ImportAjax();
